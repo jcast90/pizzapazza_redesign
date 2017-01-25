@@ -1,0 +1,164 @@
+/* CSS Document */
+
+.contact, .menu_text {
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6em;
+
+}
+
+.contact_section {
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.25em; /* 20px */
+}
+
+.contact_text, .contact-hero-text {
+    color: #fff;
+}
+
+
+legend {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%
+}
+
+#contact {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.leftCol {
+    float: left;
+    max-width: 38%;
+}
+
+.rightCol {
+    float: left;
+    max-width: 62%;
+}
+
+.colHalf {
+    padding-top: 1.25px;
+    
+}
+
+.colHalf h4 {
+    text-align: left;
+}
+
+.colHalf h6 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.clearIt {
+    clear: both;
+}
+
+.otherTexts {
+    margin-bottom: 15px;
+}
+
+.otherTexts label {
+    font-weight: normal;
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: .9375em;
+}
+
+
+
+#contact button[type="submit"]:hover {
+    background: #999;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+@media screen and (min-width:550px) {
+    .leftCol {
+        float: left;
+        max-width: 25%;
+    }
+    .leftBox {
+        float: left;
+        width: 49.5%;
+    }
+    .rightBox {
+        float: right;
+        width: 50%;
+    }
+    #contact button[type="submit"] {
+        width: 125px;
+        float: right;
+    }
+    .contact-hero-text {
+   font-size: 2.25em;
+    }
+}

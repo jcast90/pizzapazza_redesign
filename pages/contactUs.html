@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+     <link href="../css/form.css" rel="stylesheet" type="text/css">
+     <link link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/meanmenu.css" media="all" />
+	
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.meanmenu.js"></script>
+ <script src="../js/app.js"></script>
+    <script>
+    function onLoad() {
+         $('#contact').on('submit', function() {
+      
+             alert('Thank you! Your request has been submitted. We will contact you shortly.');
+         });
+    }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body onload="onLoad()">
+    <div class="container-fluid">
+        
+          <!--------------------Navigation----------------------->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div id="navigation">
+                            <ul>
+                                <li><a href="../index.html" class="logo">Pizza Pazza</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="catering.html">Catering</a>
+                                    <ul>
+                                        <li><a href="booking.html">Booking</a></li>
+                                        <li><a href="events.html">Events</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="locations.html">Locations</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="aboutUs.html">About Us</a>
+                                    <ul>
+                                        <li><a href="ourMission.html">Our Mission</a></li>
+                                        <li><a href="contactUs.html">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------------END Navigation----------------------->
+            <div class="hero hero-contact">
+            <div class="header">
+                <h1>Contact Us</h1> 
+               </div>
+                <div class="hero-content">
+             <span class="hero-text">We strive for quality and customer satisfaction. In order for us to ensure exceptional quality and service, please feel free to let us know!
+        </span> </div>
+              
+            <div class="arrow" id="arrow_down">
+                <img src="../images/down-arrow.png" alt="down arrow" />
+            </div>
+          </div>
+        
+        <!--End hero img-->
+        <!-- Banner start -->
+        <!-- Form -->
+        <div class="container clearIt section">
+            <form id="contact" action="" method="post">
+                <legend>Get in Touch</legend>
+                <fieldset class="leftBox" title="first name">
+                    <label for="firstName"></label>
+                    <input placeholder="First name" type="text" id="firstName" title="Enter your first name" tabindex="1" required> </fieldset>
+                <fieldset class="rightBox" title="last name">
+                    <label for="lastName"></label>
+                    <input placeholder="Last Name" type="text" id="lastName" title="Enter your last name" tabindex="2" required> </fieldset>
+                <fieldset class="leftBox" title="email">
+                    <label for="email"></label>
+                    <input placeholder="Email Address" type="email" id="email" title="Enter your email address" tabindex="3" required> </fieldset>
+                <fieldset class="rightBox" title="phone number">
+                    <label for="tel"></label>
+                    <input placeholder="Phone Number" type="tel" id="tel" tabindex="4" required> </fieldset>
+                <div class="colHalf clearIt">
+                    <h4>Best way to reach you:</h4>
+                    <fieldset class="otherTexts leftCol" title="telephone radio button">
+                        <label for="telRadio"></label>
+                        <input type="radio" value="phone" id="telRadio" name="requestType" tabindex="5" />
+                        <label for="telRadio">Phone</label>
+                    </fieldset>
+                    <fieldset class="otherTexts rightCol" title="email radio button">
+                        <label for="emailRadio"></label>
+                        <input type="radio" value="email" id="emailRadio" name="requestType" tabindex="6" />
+                        <label for="emailRadio">Email</label>
+                    </fieldset>
+                </div>
+                <div class="colHalf clearIt">
+                    <h4>Reason for contacting us:</h4>
+                    <fieldset class="otherTexts leftCol" title="booking checkbox">
+                        <input type="checkbox" id="checkBook" tabindex="7" />
+                        <label for="checkBook">Book an event</label>
+                    </fieldset>
+                    <fieldset class="otherTexts rightCol" title="questions checkbox">
+                        <input type="checkbox" id="checkComment" tabindex="8" />
+                        <label for="checkComment">Questions/Comments</label>
+                    </fieldset>
+                </div>
+                <fieldset class="comments" title="message">
+                    <label for="message"></label>
+                    <textarea placeholder="Your message" id="message" tabindex="9" required></textarea>
+                </fieldset>
+                <fieldset class="otherTexts" title="reference">
+                    <label for="reference">How did you find us?</label>
+                    <select id="reference">
+                        <option hidden>Choose</option>
+                        <option value="friend">A friend</option>
+                        <option value="fb">FaceBook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="yelp">Yelp</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <!-- Add feature: make submit button change to a popup saying thank you for submitting. maybe have form dissapear? or have thank you appear instead of form?-->
+                <fieldset title="submit">
+                    <button name="submit" type="submit" id="contact-submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    
+	</div>
+</body>
+<footer>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12"> <span>Pizza Pazza | 858.877.859</span> </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12"> <a href="https://www.facebook.com/pizzapazzafoodtruck/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a> <a href="https://twitter.com/pizzapazzatruck" target="_blank" ><span class="fa fa-twitter-square" aria-hidden="true"></span></a> <a href="https://www.yelp.com/biz/pizza-pazza-food-truck-la-jolla-5" target="_blank"><span class="fa fa-yelp" aria-hidden="true"></span></a> <a href="mailto:someone@example.com" target="_top"><span class="fa fa-envelope" aria-hidden="true"></span> </a></div>
+    </div>
+</footer>
+
+</html>

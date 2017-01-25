@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+.container{
+	width:1200px;
+	height:300px;
+	padding:20px;
+	border:1px solid gray;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:bordr-box;
+	background:black;
+}
+.image-slider-wrapper{
+	overflow:hidden;
+}
+#image_slider{
+	position:relative;
+	height:280px;
+	padding:0;
+	}
+#image_slider li{
+	max-width:100%;
+	float:left;
+	list-style:none;
+	}
+
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var ul;
+	var liItems;
+	var imageWidth;
+	var imageNumber;
+	
+	function init(){
+		var ul= document.getElementById('image_slider');
+		var liItems = ul.children;
+		var imageNumber = liItems.length;
+		var imageWidth = liItems[0].children[0].offsetWidth;
+		
+		ul.style.width = parseInt(imageWidth * imageNumber) + 'px';
+		slider(ul);
+		};
+	function slider(ul){
+		animate({
+			delay:17,
+			duration:3000,
+			delta:function(p){return Math.max(0, -1 +2 *p)},
+			step:function(delta){
+				ul.style.left = '-' + parseInt(currentImage * imageWidth + delta * imageWidth) + 'px';
+				},
+		callback:function(){
+			currentImage++;
+			if(currentImage < imageNumber-1){
+				slider(ul);
+				}
+				else{
+					var leftPosition = (imageNumber - 1) * imageWidth;
+					setTimeout(function(){goBack(leftPosition
+					}
+			}
+			}),
+		};
+	
+	
+	});
+
+</script>
+
+</head>
+
+<div class="container">
+	<div class="image-slider-wrapper">
+		<ul id="image_slider">
+			<li><img src="../images/fruit-1581400.jpg" alt=""></li>
+			<li><img src="../images/fruit-1581400.jpg" alt=""></li>
+			<li><img src="../images/fruit-1581400.jpg" alt=""></li>
+			<li><img src="../images/fruit-1581400.jpg" alt=""></li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+<body>
+</body>
+</html>

@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: "KG All of Me";
+    src: url(../fonts/KGAllofMe.ttf);
+}
+header,
+article,
+aside,
+main,
+footer,
+figure,
+video,
+audio,
+section,
+nav {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+body{
+	font-family: "Roboto", sans-serif !important;
+}
+
+ul,li{
+	list-style: none;
+}
+
+
+h1 {
+    font-family: "KG All of Me", sans-serif !important;
+	font-size: 1em;
+	
+}
+h2 {
+	font-family:"KG All of Me", sans-serif !important;
+    position:relative;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h3{
+	text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1em;  /* 48px */
+    text-transform: uppercase;
+}
+
+a{
+	text-decoration: none !important;
+}
+.row{
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+/* navigation */
+
+#navigation {
+    margin: 20px 15px;
+    width: 70%;
+    height: 30px;
+	position:absolute;
+	z-index:300;
+	
+}
+
+#navigation ul ul {
+    margin: 0 0 0 -1px;
+    width: 160px;
+    display: none;
+    position: absolute;
+}
+
+#navigation ul ul ul {
+    left: 98%;
+    top: 50%;
+    z-index: 5;
+}
+
+#navigation ul li {
+    position: relative;
+}
+
+#navigation ul li:hover > ul {
+    display: block;
+    border-bottom: none;
+}
+
+#navigation li {
+    float: left;
+    list-style-type: none;
+    background-image: none;
+    margin: 4px 1px 4px 0;
+    padding: 0;
+    width: auto;
+}
+
+#navigation li li {
+    float: none;
+    padding-left: 10px;
+    width: 100px;
+}
+
+#navigation a:link {
+    padding: 0 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+}
+
+#navigation li li a:link {
+    padding: 2px;
+}
+
+#navigation a:visited {
+    color:#FFFFFF;
+}
+
+#navigation a:hover {
+    color:#E5E3E3;
+}
+
+
+
+
+/* end navigation */
+
+/* hero */
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+	
+}
+
+.hero .header {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6em;
+    -ms-transform: translate(0, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(0, -50%);
+    /* Safari */
+    transform: translate(0, -50%);
+}
+/*Hero images*/
+.hero-index{background-image: url(../images/kneading_dough.jpg)}
+.hero-booking{background-image: url(../images/restaurant-min.jpg)}
+.hero-mission{background-image: url(../images/bread.jpg)}
+.hero-events{background-image: url(../images/office_event.jpg)}
+.hero-contact{background-image: url(../images/dark.jpg)}
+.hero-menu{background-image: url(../images/flour_hands.jpg)}
+.hero-blog{background-image: url(../images/Blog_background.jpg)}
+.hero-about{background-image: url(../images/hands.jpg)}
+.hero-catering{background-image: url(../images/home_catering.jpg)}
+.hero-locations{background-image: url(../images/locations_hero.jpg)}
+
+.hero-content{
+	position:relative;
+	top:40%;
+	text-align:center;
+		
+}
+.hero-content h3{
+	color:#fff;
+	font-size:2em;
+	padding:0 80px;
+	margin-top:-10px;
+
+
+}
+.hero-text {
+	
+   font-size: 1.5em;
+    margin:0 auto;
+    display: block;
+	width:70%;
+	color:#fff;
+}
+
+/*down arrow styling on landing pages*/
+.arrow{
+	position:absolute;
+	top:90vh;
+	
+	z-index: 9999;
+	cursor:pointer;
+	
+	
+	
+}
+.arrow img{
+	height:50px;
+	width:50px;
+	 
+}
+
+/* end hero */
+
+/* section */
+
+.background{
+	background-color:#A7B4E8;
+	
+}
+.section_content, .accordion{
+	padding: 80px 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.25em;
+
+}
+/* end section */
+/* section image */
+
+.section_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 50vh;
+}
+.section_img h2{
+	position:relative;
+	top:5vh;
+	font-size:3em;
+}
+.section_img h3 {
+    position:relative;
+	top:10vh;
+    text-align: center;
+    font-size: 2em; /* 48px */
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.section_img a, .accordion_m a, .accordion_c a{
+	color:rgba(255,255,255,0.9) !important;
+	padding: 15px;
+	border: 10px solid transparent;
+	border-image:url('../images/grit.png') 10;
+	border-image-repeat:repeat;
+}
+.section_img a:hover, .accordion_m a:hover, .accordion_c a:hover{
+	color:rgba(255,255,255,0.8);
+	background-color:rgba(0,0,0,0.3);
+	border: 7px solid rgba(128,128,128,0.7);
+}
+
+
+#inspired_b{background-image: url(../images/flour_hands.jpg);}
+#caterd_b{background-image:url(../images/home_catering.jpg);}
+#mission_1{background-image: url(../images/cat1.jpg);}
+#mission_2 {background-image: url(../images/cat2.jpg);}
+#about_us1 {  background-image: url(../images/feast.jpg);}
+#about_us2 {background-image: url(../images/chef.jpg);}
+#events_office{background-image:url(../images/feast.jpg);}
+#events_party{background-image:url(../images/party_event.jpg);}
+/* end section image */
+
+/*accordion styling */
+.ui-accordion-header {
+    text-align: center;
+	height:20vh;
+	padding-top: 2em !important;
+	font-family: "Roboto", sans-serif;
+	font-size:2em !important;
+	color:#fff !important;
+
+}
+.ui-accordion-content{
+	text-align:center;
+}
+
+/************************accordion on menu page*******************/
+.accordion_m .ui-accordion-header:nth-of-type(1) {
+	background:url("../images/menu-banners-long-sprite.jpg") -100px -408px;
+	
+}
+.accordion_m .ui-accordion-header:nth-of-type(2) {
+	background:url("../images/menu-banners-long-sprite.jpg") -100px -808px;
+	
+}
+.accordion_m .ui-accordion-header:nth-of-type(3) {
+	background:url("../images/menu-banners-long-sprite.jpg") -100px 0;
+	
+}
+.accordion_m .ui-accordion-header:last-of-type {
+	background:url("../images/menu-banners-long-sprite.jpg") -100px -1208px;
+	
+}
+
+/******************accordion on catering page******************/
+.accordion_c .ui-accordion-header:nth-of-type(1) {
+	background:url("../images/catering-banners-long-sprite.jpg") -100px -408px;
+	
+}
+.accordion_c .ui-accordion-header:nth-of-type(2) {
+	background:url("../images/catering-banners-long-sprite.jpg") -100px -808px;
+	
+}
+.accordion_c .ui-accordion-header:nth-of-type(3) {
+	background:url("../images/catering-banners-long-sprite.jpg") -100px 0;
+	
+}
+.accordion_c .ui-accordion-header:last-of-type {
+	background:url("../images/catering-banners-long-sprite.jpg") -100px -1208px;
+	
+}
+/**** LOCATION PAGE START *******/
+.button, .button:focus {
+
+	border-radius:8px;
+	padding:10px;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+	font-size:10px;
+    
+}
+.button:hover {
+    background-color: #777;
+    border-color: #777;
+}
+/**** LOCATION PAGE END *******/
+
+
+/* footer */
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+	font-size: 1.5em;
+	border-top: 5px solid transparent;
+	background:url('../images/grit.png') ;
+	
+	
+
+}
+footer a{
+	color:#4F4F4F;
+}
+footer a:visited{
+	color:#4F4F4F;
+}
+footer a:hover{
+	color:#000;
+}
+
+.fa{
+	font-size:1em !important;
+	margin-right:10px;
+}
+  @media screen and (min-width:320px) {
+            .hero-content img {
+                display: none;
+            }
+	  .hero h1{
+		  font-size:.7em;
+	  }
+            .hero-content h3 {
+				padding-bottom:10%;
+				text-align:center;
+			}
+	  .arrow{
+			left:45%;
+		  }
+        }
+
+/* disable box border on accordion button packages for mobile */
+
+@media screen and (max-width: 450px) {
+    .section_img a,
+    .accordion_m a,
+    .accordion_c a {
+        border: none;
+        padding: 0;
+    }
+    .section_img a:hover,
+    .accordion_m a:hover,
+    .accordion_c a:hover {
+        border: none;
+        padding: 0;
+        
+    }
+   
+}
+
+@media screen and (min-width:550px) {
+    .section_img {
+        width: 100%;
+    }
+	.arrow{
+		left:47%
+	}
+}
+
+@media screen and (min-width:991px) {
+    .hero-content img {
+        display: inline;
+        height: 200px;
+    }
+    .hero-content h3 {
+        font-size: 2em;
+    }
+	.hero-text{
+		font-size:2.5em;
+	}
+	.section_content{
+		font-size:2em;
+	}
+	.arrow{
+		left:48%
+	}
+}
+
+
+/*  section */
+@media screen and (min-width:1000px) {
+    
+    .section_content {
+        max-width: 50%;
+    }
+
+	 /*locations calendar */
+    .section_location {
+        max-width: 100%;
+    }
+	.section_img h2{
+		top:7vh;
+		font-size:4em;
+	}
+	.section_img h3{
+		top:12vh;
+		font-size:3em;
+	}
+}
+/* end section */
+
+/* end form css */

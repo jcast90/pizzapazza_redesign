@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link href="../css/Minemain.css" rel="stylesheet"> </head>
+<link href="../css/responsive-calendar.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/meanmenu.css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="../js/responsive-calendar.js"></script>
+<script src="../js/jquery.meanmenu.js"></script>
+<script src="../js/app.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+<![endif]-->
+<!-------Below sctipt and css for the calendar-->
+
+<body>
+    <div class="container-fluid">
+        
+            <!--------------------Navigation----------------------->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div id="navigation">
+                            <ul>
+                                <li><a href="../index.html" class="logo">Pizza Pazza</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="catering.html">Catering</a>
+                                    <ul>
+                                        <li><a href="booking.html">Booking</a></li>
+                                        <li><a href="events.html">Events</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="locations.html">Locations</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="aboutUs.html">About Us</a>
+                                    <ul>
+                                        <li><a href="ourMission.html">Our Mission</a></li>
+                                        <li><a href="contactUs.html">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------------END Navigation----------------------->
+            <div class="hero hero-booking">
+            <div class="header">
+                <h1>Booking</h1>
+                </div>
+             <div class="hero-content">
+				 <span class="hero-text">Book the perfect day for <em>your</em> perfect day!
+        </span> </div>
+            <div class="arrow" id="arrow_down">
+                <img src="../images/down-arrow.png" alt="down arrow" />
+            </div>
+        </div>
+        <!----------------End hero img---------------->
+        <!-- Banner start -->
+		<div class="background">
+           <div class="section section_content">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12"> <span>
+         Check our calendar below for our availability!
+        </span> </div>
+            </div>
+        </div>
+        </div>
+        <!--------------- Responsive calendar - START ------------------>
+       
+        <div class="responsive-calendar section_content">
+            <div class="controls">
+                <a class="pull-left" data-go="prev">
+                    <button>Prev</button>
+                </a>
+                <h4><span data-head-year></span> <span data-head-month></span></h4>
+                <a class="pull-right" data-go="next">
+                    <button>Next</button>
+                </a>
+            </div>
+            <hr/>
+            <div class="day-headers">
+                <div class="day header">Mon</div>
+                <div class="day header">Tue</div>
+                <div class="day header">Wed</div>
+                <div class="day header">Thu</div>
+                <div class="day header">Fri</div>
+                <div class="day header">Sat</div>
+                <div class="day header">Sun</div>
+            </div>
+            <div class="days" data-group="days"> </div>
+        </div>
+		
+       
+        <!----------------- Responsive calendar - END ---------------->
+        
+    </div>
+  <script>
+   		$(".responsive-calendar").responsiveCalendar({
+ 			time: '2017-01',
+ 			events: {
+ 				"2013-04-30": {
+ 					"number": 5,
+ 					"url": "http://w3widgets.com/responsive-slider"
+ 				},
+ 				"2013-04-26": {
+ 					"number": 1,
+ 					"url": "http://w3widgets.com"
+ 				},
+ 				"2013-05-03": {
+ 					"number": 1
+ 				},
+ 				"2013-06-12": {}
+			}
+		}); 
+  </script>
+</body>
+<footer>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12"> <span>Pizza Pazza | 858.877.859</span> </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12"> <a href="https://www.facebook.com/pizzapazzafoodtruck/" target="_blank"><span class="fa fa-facebook-square" aria-hidden="true"></span></a> <a href="https://twitter.com/pizzapazzatruck" target="_blank" ><span class="fa fa-twitter-square" aria-hidden="true"></span></a> <a href="https://www.yelp.com/biz/pizza-pazza-food-truck-la-jolla-5" target="_blank"><span class="fa fa-yelp" aria-hidden="true"></span></a> <a href="mailto:someone@example.com" target="_top"><span class="fa fa-envelope" aria-hidden="true"></span> </a></div>
+    </div>
+</footer>
+
+</html>
